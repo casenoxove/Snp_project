@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오늘의 빛나는 완성 Snp</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script/script.js" defer></script>
 </head>
 <body>
     <!-- 상단 내비게이션 시작 -->
     <header>
         <div class="top">
-            <div class="top_one">
-                <div class="left">
-                    <a href="#">BRAND STORY</a>
-                    <a href="#">MAGAZINE</a>
-                    <a href="#">COMMUNITY</a>
-                </div>
-                <div class="right">
+            <div class="top_left">
+                <a href="#">BRAND STORY</a>
+                <a href="#">MAGAZINE</a>
+                <a href="#">COMMUNITY</a>
+            </div>
+            <div class="top_center">
+                <h1><a href="#"><img src="./images/logo_top.svg" alt="snp"></a></h1>
+            </div>
+            <div class="top_right">
+                <div class="right_top">
                     <a href="#">로그인</a>
                     <a href="#">회원가입</a>
                     <a href="#">마이페이지</a>
@@ -26,16 +41,15 @@
                     <a href="#">고객센터</a>
                     <a href="#">FAQ</a>
                 </div>
-            </div>
-            <div class="top_two">
-                <h1><a href="#"><img src="./images/snplogo.svg" alt="snp"></a></h1>
-                <form action="#" method="get" id="search">
-                    <fieldset>
-                        <legend class="skip">search</legend>
-                        <input type="text" name="user_search" placeholder="꿀광피부 완성! 골드 콜라겐 리바이탈 캡슐">
-                        <button type="button" id="search_icon"><img src="./images/search.png" alt=""></button>
-                    </fieldset>
-                </form>
+                <div class="right_bottom">
+                    <form action="#" method="get" id="search">
+                        <fieldset>
+                            <legend class="skip">search</legend>
+                            <input type="text" class="user_search" placeholder="꿀광피부 완성! 골드 콜라겐 리바이탈 캡슐">
+                            <button type="button" id="search_icon"><img src="./images/search.png" alt=""></button>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
         </div>
         <!-- 최상단 끝 -->
@@ -120,6 +134,7 @@
                 </div>
             </div>
         </div>
+        <div class="swiper-pagination"></div>
         <!-- 메인 배너 끝 -->
         <!-- 인기 제품 시작 -->
         <div class="best">
@@ -136,35 +151,35 @@
                 <div class="real_time">
                     <div class="best_one">
                         <a href="#">
-                            <p>01</p>
+                            <p class="num">01</p>
                             <h3 class="activate">골드 콜라겐 퍼펙션 아이패치</h3>
                             <p><img src="./images/arrow_right.png" alt=""></p>
                         </a>
                     </div>
                     <div class="best_two">
                         <a href="#">
-                            <p>02</p>
+                            <p class="num">02</p>
                             <h3>골드 콜라겐 듀얼 아이패치</h3>
                             <p><img src="./images/arrow_right_2.png" alt=""></p>
                         </a>
                     </div>
                     <div class="best_three">
                         <a href="#">
-                            <p>03</p>
+                            <p class="num">03</p>
                             <h3>골드 콜라겐 탄력케어 3종 세트</h3>
                             <p><img src="./images/arrow_right_2.png" alt=""></p>
                         </a>
                     </div>
                     <div class="best_four">
                         <a href="#">
-                            <p>04</p>
+                            <p class="num">04</p>
                             <h3>탄력&미백 마스크팩 20매 세트</h3>
                             <p><img src="./images/arrow_right_2.png" alt=""></p>
                         </a>
                     </div>
                     <div class="best_five">
                         <a href="#">
-                            <p>05</p>
+                            <p class="num">05</p>
                             <h3>UV 퍼펙트 에어 쿨 선크림</h3>
                             <p><img src="./images/arrow_right_2.png" alt=""></p>
                         </a>
@@ -175,35 +190,35 @@
                 <div class="weekly">
                     <div class="best_one">
                         <a href="#">
-                            <p>01</p>
+                            <p class="num">01</p>
                             <h3 class="activate">골드 콜라겐 퍼펙션 아이패치</h3>
                             <p><img src="./images/arrow_right.png" alt=""></p>
                         </a>
                     </div>
                     <div class="best_two">
                         <a href="#">
-                            <p>02</p>
+                            <p class="num">02</p>
                             <h3>골드 콜라겐 프리미엄 5종 세트</h3>
                             <p><img src="./images/arrow_right_2.png" alt=""></p>
                         </a>
                     </div>
                     <div class="best_three">
                         <a href="#">
-                            <p>03</p>
+                            <p class="num">03</p>
                             <h3>골드 콜라겐 퍼밍 아이패치 60매</h3>
                             <p><img src="./images/arrow_right_2.png" alt=""></p>
                         </a>
                     </div>
                     <div class="best_four">
                         <a href="#">
-                            <p>04</p>
+                            <p class="num">04</p>
                             <h3>트리플 워터 필 수딩 패드 60매</h3>
                             <p><img src="./images/arrow_right_2.png" alt=""></p>
                         </a>
                     </div>
                     <div class="best_five">
                         <a href="#">
-                            <p>05</p>
+                            <p class="num">05</p>
                             <h3>골드 콜라겐 뽑아쓰는 데일리 마스크팩</h3>
                             <p><img src="./images/arrow_right_2.png" alt=""></p>
                         </a>
@@ -331,7 +346,7 @@
         <!-- 신제품 끝 -->
         <!-- 상품 목록 시작 -->
         <div class="shop">
-            <div class="left">
+            <div class="shop_left">
                 <a href="#">
                     <p><img src="./images/shop_left_image.png" alt=""></p>
                     <div class="title">
@@ -343,16 +358,16 @@
             </div>
             <!-- 상품 목록 이미지 끝 -->
             <!-- 상품 목록 리스트 시작 -->
-            <div class="right">
+            <div class="shop_right">
                 <div class="list">
-                    <div class="left">
+                    <div class="list_left">
                         <a href="#">스킨케어</a>
                         <a href="#">아이케어</a>
                         <a href="#">마스크/팩</a>
                         <a href="#">선케어</a>
                         <a href="#">기프트세트</a>
                     </div>
-                    <div class="right">
+                    <div class="list_right">
                         <a href="#">더보기</a>
                     </div>
                 </div>
@@ -617,8 +632,10 @@
         <!-- 브랜드 스토리 시작 -->
         <div class="brand">
             <p><img src="./images/brand_story.png" alt=""></p>
-            <h2>Brand Story</h2>
-            <p><a href="#">MORE</a></p>
+            <div class="brand title">
+                <h2>Brand Story</h2>
+                <p><a href="#">MORE</a></p>
+            </div>
         </div>
         <!-- 브랜드 스토리 끝 -->
         <!-- 인스타그램 시작 -->

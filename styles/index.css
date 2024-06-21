@@ -1,0 +1,135 @@
+html, body {
+    width: 1920px;
+    overflow-x: hidden;
+}
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+header {}
+header .top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+header .top .top_left {
+    padding-left: 178px;
+}
+header .top .top_left a {
+    font-size: 0.75rem;
+    margin-left: 20px;
+    color: #606060;
+}
+header .top .top_left a:first-child {
+    margin-left: 0;
+}
+header .top .top_center {
+    text-align: center;
+}
+header .top .top_center h1 {
+    padding-top: 20px;
+}
+header .top .top_center h1 a {}
+header .top .top_center h1 a img {}
+header .top .top_right {
+    text-align: right;
+    padding-right: 178px;
+}
+header .top .top_right .right_top {}
+header .top .top_right .right_top a {
+    font-size: 0.75rem;
+    margin-right: 20px;
+}
+header .top .top_right .right_top a:last-child {
+    margin-right: 0;
+}
+header .top .top_right .right_bottom {
+    margin-top: 32px;
+}
+header .top .top_right .right_bottom form {}
+header .top .top_right .right_bottom form fieldset {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+header .top .top_right .right_bottom form fieldset legend {}
+header .top .top_right .right_bottom form fieldset input {
+    outline: none;
+    width: 261px;
+    border-width: 0;
+}
+header .top .top_right .right_bottom form fieldset .user_search {
+    border-width: 0 0 1px;
+}
+header .top .top_right .right_bottom form fieldset button {
+    border: 0;
+    background-color: rgba(266, 266, 266, 0);
+}
+/* 최상단 끝 */
+header nav {
+    margin-top: 15px;
+}
+header nav .gnb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+header nav .gnb a {
+    margin-left: 100px;
+    font-size: 0.875rem;
+}
+header nav .gnb a:nth-child(1) {
+    margin-left: 0;
+}
+header nav .gnb a span {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+/* 상단 내비게이션 끝 */
+/* 메인 시작 */
+main {}
+main #visual_slide {}
+main #visual_slide .swiper-wrapper {}
+main #visual_slide .swiper-wrapper .swiper-slide {}
+main #visual_slide .swiper-wrapper .slide1 {
+    background-image: url(../images/main_banner_1.jpg);
+}
+main #visual_slide .swiper-wrapper .slide2 {
+    background-image: url(../images/main_banner_2.jpg);
+}
+main #visual_slide .swiper-wrapper .slide3 {
+    background-image: url(../images/main_banner_3.jpg);
+}
+main #visual_slide .swiper-wrapper .slide4 {
+    background-image: url(../images/main_banner_4.jpg);
+}
+main #visual_slide .swiper-wrapper .slide5 {
+    background-image: url(../images/main_banner_5.jpg);
+}
+main #visual_slide .swiper-wrapper .swiper-slide {
+    padding-left: 178px;
+    padding-top: 106px;
+}
+main #visual_slide .swiper-wrapper .swiper-slide a {}
+main #visual_slide .swiper-wrapper .swiper-slide a {}
+main #visual_slide .swiper-wrapper .swiper-slide a .main_text {}
+main #visual_slide .swiper-wrapper .swiper-slide a .main_text p {
+    line-height: 2;
+    font-size: 1.25rem;
+    margin-bottom: 28px;
+}
+main #visual_slide .swiper-wrapper .swiper-slide a .main_text h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+main #visual_slide .swiper-wrapper .swiper-slide a .main_tag {
+    display: flex;
+    margin-top: 56px;
+}
+main #visual_slide .swiper-wrapper .swiper-slide a .main_tag p {
+    margin-right: 20px;
+    padding: 10px 25px;
+    background-color: #FFF;
+    color: #606060;
+    border-radius: 50px;
+}
